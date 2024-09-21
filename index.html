@@ -7,6 +7,52 @@
         <title>Sign-up Form</title>
     </head>
     <body>
-        
+        <div class="background-container">
+            <div class="card-body">
+                <p class="card-text"></p>
+                <img class="card-logo" src="" alt="the odin project logo">
+            </div>
+            <span>Photo by <a href="">creator </a>on <a href="">site</a></span>
+        </div>
+        <div class="main-container">
+            <!-- use <em> for emphasized words -->
+            <div class="quote-container">
+                <p>Quote paragraph</p>
+                <p>Bottom text</p>
+            </div>
+            <div class="form-container">
+                <h3>Let's do this!</h3>
+                <form id="register-form" action="" method="post">
+                    <div class="input-container">
+                        <label for="first_name">First name</label>
+                        <input id="first_name" name="first_name" type="text">
+                    </div>
+                    <div class="input-container">
+                        <label for="last_name">Last name</label>
+                        <input id="last_name" name="last_name" type="text">
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email">
+                    </div>
+                    <div class="input-container">
+                        <label for="phone_number">Phone number</label>
+                        <input id="phone_number" name="phone_number" type="tel">
+                    </div>
+                    <div class="input-container">
+                        <label for="pwd">Password</label>
+                        <input id="pwd" name="pwd" type="password">
+                    </div>
+                    <div class="input-container">
+                        <label for="pwd_confirm">Confirm password</label>
+                        <input id="pwd_confirm" name="pwd_confirm" type="password">
+                    </div>
+                </form>
+            </div>
+            <div class="register-container">
+                <button type="submit" form="register-form">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+        </div>
     </body>
 </html>
