@@ -1,3 +1,34 @@
+@font-face {
+    font-family: "rubik";
+    src: 
+        url(./fonts/rubik-variablefont_wght-webfont.woff2) format("woff2"),
+        url(./fonts/rubik-variablefont_wght-webfont.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "hangyaku";
+    src:
+        url(./fonts/hangyaku-xrrwq-webfont.woff2) format("woff2"),
+        url(./fonts/hangyaku-xrrwq-webfont.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --light-gray: lightgray;
+    --card-color: rgba(0, 0, 0, 0.6);
+
+    --black-shadow: 1px 1px 3px black;
+
+    --card-logo-shadow: drop-shadow(var(--black-shadow));
+    --card-text-shadow: var(--black-shadow);
+    --artist-link-text-shadow: var(--black-shadow);
+
+    font-size: 10px;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -13,4 +44,86 @@ img, picture, video, canvas, svg {
 
 input, button, textarea, select {
     font: inherit;
+}
+
+body {
+    height: 100vh;
+    font-size: 1.6rem;
+    font-family: "rubik", sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+}
+
+.background-container {
+    width: 640px;
+    background-color: orchid;
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25% 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-body {
+    background-color: var(--card-color);
+
+    position: absolute;
+    color: white;
+    top: 184px;
+    width: 640px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-logo {
+    max-width: 96px;
+    margin-right: 1rem;
+
+    filter: var(--card-logo-shadow);
+}
+
+.card-body p {
+    text-shadow: var(--card-text-shadow);
+
+    font-family: "hangyaku", sans-serif;
+    font-style: normal;
+    font-size: 10rem;
+    color: white;
+}
+
+.artist-info {
+    color: white;
+    position: absolute;
+    bottom: 1rem;
+    text-shadow: var(--artist-link-text-shadow);
+}
+
+.artist-info a {
+    color: orchid;
+}
+
+.artist-info a:hover {
+    color: white;
+}
+
+.artist-info a:active {
+    color: lightgray;
+}
+
+.card-text {
+    /* Custom font pending */
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+    font-size: 6rem;
+}
+
+.main-container {
+    flex: 1 0 auto;
 }
