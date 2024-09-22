@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        <title>Sign-up Form</title>
+        <title>Dosten's Sign-up Form</title>
     </head>
     <body>
         <div class="background-container">
@@ -21,11 +21,9 @@
             </span>
         </div>
         <div class="main-container">
-            <!-- use <em> for emphasized words -->
             <div class="quote-container">
                 <p class="first-quote">Magical girls are needed everywhere around
-                    the world! With your help, we'll defeat <em>Walpurgisnacht</em> 
-                together.
+                    the world! With your help, we'll defeat <em>Walpurgisnacht</em>.
                 </p>
                 <p class="second-quote">
                     Join our ranks by filling out the form below!
@@ -36,27 +34,58 @@
                 <form id="register-form" action="" method="post">
                     <div class="input-container">
                         <label for="first_name">First name</label>
-                        <input id="first_name" name="first_name" type="text">
+                        <input id="first_name"
+                        name="first_name"
+                        placeholder="Your beautiful name!"
+                        pattern="[\sa-zA-Z'\-]{2,24}"
+                        title="Please input a valid name."
+                        type="text">
                     </div>
                     <div class="input-container">
                         <label for="last_name">Last name</label>
-                        <input id="last_name" name="last_name" type="text">
+                        <input id="last_name"
+                        name="last_name"
+                        placeholder="Who's your daddy?"
+                        pattern="[\sa-zA-Z'\-]{2,24}"
+                        title="Please input letters only."
+                        type="text">
                     </div>
                     <div class="input-container">
                         <label for="email">Email</label>
-                        <input id="email" name="email" type="email">
+                        <input id="email"
+                        minlength="2"
+                        maxlength="32"
+                        placeholder="homu@odin.css"
+                        name="email"
+                        type="email">
                     </div>
                     <div class="input-container">
                         <label for="phone_number">Phone number</label>
-                        <input id="phone_number" name="phone_number" type="tel">
+                        <input id="phone_number"
+                        name="phone_number"
+                        placeholder='000-0000-000'
+                        pattern="\d{9,10}|(\d{3}([-. ]?)\d{4}\1\d{3})"
+                        title='Please enter a 10-digit phone number: "66332161561" or "333-4141-732"'
+                        type="tel">
                     </div>
                     <div class="input-container">
                         <label for="pwd">Password</label>
-                        <input id="pwd" name="pwd" type="password">
+                        <input id="pwd"
+                        name="pwd"
+                        type="password"
+                        minlength="2"
+                        maxlength="16"
+                        placeholder="Make it safe!"
+                        pattern="^{8,}$"
+                        title="Enter a password that is at least 8 characters long and contains a special character.">
                     </div>
                     <div class="input-container">
                         <label for="pwd_confirm">Confirm password</label>
-                        <input id="pwd_confirm" name="pwd_confirm" type="password">
+                        <input id="pwd_confirm"
+                        name="pwd_confirm"
+                        type="password"
+                        pattern="^(?=.*\W)\w{8,}$"
+                        title="Enter a password that is at least 8 characters long and contains a special character.">
                     </div>
                 </form>
             </div>
