@@ -17,16 +17,23 @@
 }
 
 :root {
-    --light-gray: lightgray;
-    --card-color: rgba(0, 0, 0, 0.6);
-
+    --light-gray: #f7f7f7;
+    --white: #ffffff;
+    --dark-gray: #0d0d0d;
+    
     --black-shadow: 1px 1px 3px black;
 
+    --card-color: rgba(0, 0, 0, 0.6);
     --card-logo-shadow: drop-shadow(var(--black-shadow));
     --card-text-shadow: var(--black-shadow);
+
     --artist-link-text-shadow: var(--black-shadow);
 
+    --main-container-padding: 4rem;
+    --medium-font-size: 2.2rem;
+
     font-size: 10px;
+    color: var(--dark-gray);
 }
 
 *, *::before, *::after {
@@ -56,8 +63,10 @@ body {
     flex-direction: row;
 }
 
+/* Background / Window container */
+
 .background-container {
-    width: 640px;
+    width: 37%;
     background-color: orchid;
     background-image: url(./img/background.jpg);
     background-size: cover;
@@ -73,11 +82,12 @@ body {
     position: absolute;
     color: white;
     top: 184px;
-    width: 640px;
+    width: inherit;
     height: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
 .card-logo {
@@ -124,6 +134,51 @@ body {
     font-size: 6rem;
 }
 
+/* Main container / Form container */
+
 .main-container {
     flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container > * {
+    padding-left: var(--main-container-padding)
+}
+
+.quote-container {
+    background-color: var(--light-gray);
+    flex: 8;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    font-size: var(--medium-font-size);
+    font-style: normal;
+    font-weight: bold;
+}
+
+.quote-container .first-quote {
+    width: 550px;
+    margin-bottom: 3rem;
+    line-height: 1.4;
+}
+
+.quote-container .second-quote {
+    margin-bottom: 5rem;
+}
+
+.form-container {
+    background-color: var(--white);
+    flex: 6;
+}
+
+.form-container > h3 {
+    font-size: var(--medium-font-size);
+}
+
+.register-container {
+    background-color: var(--light-gray);
+    flex: 8;
 }
