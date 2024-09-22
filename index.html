@@ -45,9 +45,9 @@
                         <label for="last_name">Last name</label>
                         <input id="last_name"
                         name="last_name"
-                        placeholder="Who's your daddy?"
+                        placeholder="Also known as surname!"
                         pattern="[\sa-zA-Z'\-]{2,24}"
-                        title="Please input letters only."
+                        title="Please input a valid name."
                         type="text">
                     </div>
                     <div class="input-container">
@@ -64,7 +64,7 @@
                         <input id="phone_number"
                         name="phone_number"
                         placeholder='000-0000-000'
-                        pattern="\d{9,10}|(\d{3}([-. ]?)\d{4}\1\d{3})"
+                        pattern="[0-9]{9,10}|([0-9]{3}([-. ]?)[0-9]{4}\1[0-9]{3})"
                         title='Please enter a 10-digit phone number: "66332161561" or "333-4141-732"'
                         type="tel">
                     </div>
@@ -73,24 +73,23 @@
                         <input id="pwd"
                         name="pwd"
                         type="password"
-                        minlength="2"
-                        maxlength="16"
                         placeholder="Make it safe!"
-                        pattern="^{8,}$"
-                        title="Enter a password that is at least 8 characters long and contains a special character.">
+                        pattern="^(?=.*\W).{8,24}$"
+                        pattern="^(?=.*[\*@$!%*#?&])\w{8,24}$"
+                        title="The password must be between 8 and 24 characters long and contain a special character.">
                     </div>
                     <div class="input-container">
                         <label for="pwd_confirm">Confirm password</label>
                         <input id="pwd_confirm"
                         name="pwd_confirm"
                         type="password"
-                        pattern="^(?=.*\W)\w{8,}$"
-                        title="Enter a password that is at least 8 characters long and contains a special character.">
+                        pattern="^(?=.*\W).{8,24}$"
+                        title="The password must be between 8 and 24 characters long and contain a special character.">
                     </div>
                 </form>
             </div>
             <div class="register-container">
-                <button type="button" class="register-button" form="register-form">
+                <button type="submit" class="register-button" form="register-form">
                     Create Account
                 </button>
                 <p class="login-paragraph">Already have an account?
