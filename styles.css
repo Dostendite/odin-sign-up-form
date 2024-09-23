@@ -52,6 +52,7 @@ em {
 
 * {
     margin: 0;
+    padding: 0;
 }
 
 img, picture, video, canvas, svg {
@@ -113,11 +114,12 @@ body {
     margin-right: 10px;
 }
 
-.card-body p {
+.card-body h1 {
     text-shadow: var(--card-text-shadow);
 
     font-family: "hangyaku", sans-serif;
     font-style: normal;
+    font-weight: normal;
     font-size: 10rem;
     color: white;
 }
@@ -164,7 +166,6 @@ body {
 
 .quote-container {
     background-color: var(--light-gray);
-    font-size: var(--medium-font-size);
 
     flex: 8;
     display: flex;
@@ -174,12 +175,14 @@ body {
 }
 
 .quote-container .first-quote {
+    font-size: var(--medium-font-size);
     width: 550px;
     margin-bottom: 40px;
     line-height: 1.4;
 }
 
 .quote-container .second-quote {
+    font-size: var(--medium-font-size);
     margin-bottom: 50px;
 }
 
@@ -201,6 +204,9 @@ body {
 
 #register-form {
     width: 600px;
+}
+
+#register-form ul {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
@@ -326,4 +332,5 @@ body {
     height: 60px;
     top: 6px;
     left: 43px;
+    pointer-events: none;
 }
