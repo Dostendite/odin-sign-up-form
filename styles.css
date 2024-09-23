@@ -271,10 +271,12 @@ body {
 }
 
 .register-button {
+    position: absolute;
+    top: 355px;
+    
     box-shadow: 1px 1px 4px var(--box-shadow-color);
     background-color: var(--register-section-color);
 
-    margin: 36px 0;
     padding: 14px 52px;
     border-radius: 6px;
     font-weight: bold;
@@ -294,6 +296,7 @@ body {
 }
 
 .login-paragraph {
+    margin-top: 116px;
     font-weight: bold;
 }
 
