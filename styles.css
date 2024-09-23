@@ -84,7 +84,7 @@ body {
     background-color: var(--register-section-color);
     background-image: url(./img/background.jpg);
 
-    width: 42%;
+    width: 810px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 25% 50%;
@@ -98,6 +98,7 @@ body {
     position: absolute;
     color: white;
     top: 184px;
+
     width: inherit;
     display: flex;
     justify-content: center;
@@ -184,7 +185,7 @@ body {
 
 .form-container {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     background-color: var(--white);
     box-shadow: 3px 3px 4px var(--box-shadow-color);
 
@@ -276,7 +277,6 @@ body {
 .register-button {
     position: absolute;
     top: 355px;
-    z-index: 1;
 
     box-shadow: 1px 1px 4px var(--box-shadow-color);
     background-color: var(--register-section-color);
@@ -321,7 +321,7 @@ body {
 }
 
 .kyubey {
-    z-index: 2;
+    z-index: 1;
     position: absolute;
     height: 60px;
     top: 6px;
