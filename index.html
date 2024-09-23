@@ -31,10 +31,11 @@
             </div>
             <div class="form-container">
                 <h3>Let's do this!</h3>
-                <form id="register-form" action="" method="post">
+                <form id="register-form" method="post" action="">
                     <div class="input-container">
                         <label for="first_name">First name</label>
-                        <input id="first_name"
+                        <input
+                        id="first_name"
                         name="first_name"
                         placeholder="Your beautiful name!"
                         pattern="[\sa-zA-Z'\-]{2,24}"
@@ -43,7 +44,8 @@
                     </div>
                     <div class="input-container">
                         <label for="last_name">Last name</label>
-                        <input id="last_name"
+                        <input
+                        id="last_name"
                         name="last_name"
                         placeholder="Also known as surname!"
                         pattern="[\sa-zA-Z'\-]{2,24}"
@@ -52,48 +54,50 @@
                     </div>
                     <div class="input-container">
                         <label for="email">Email</label>
-                        <input id="email"
+                        <input
+                        id="email"
+                        name="email"
                         minlength="2"
                         maxlength="32"
                         placeholder="homu@odin.css"
-                        name="email"
                         type="email">
                     </div>
                     <div class="input-container">
                         <label for="phone_number">Phone number</label>
-                        <input id="phone_number"
+                        <input
+                        id="phone_number"
                         name="phone_number"
-                        placeholder='000-0000-000'
-                        pattern="[0-9]{9,10}|([0-9]{3}([-. ]?)[0-9]{4}\1[0-9]{3})"
-                        title='Please enter a 10-digit phone number: "66332161561" or "333-4141-732"'
+                        placeholder='電話番号'
                         type="tel">
                     </div>
                     <div class="input-container">   
                         <label for="pwd">Password</label>
-                        <input id="pwd"
+                        <input
+                        id="pwd"
                         name="pwd"
                         type="password"
                         placeholder="Make it safe!"
                         pattern="^(?=.*\W).{8,24}$"
-                        pattern="^(?=.*[\*@$!%*#?&])\w{8,24}$"
                         title="The password must be between 8 and 24 characters long and contain a special character.">
                     </div>
                     <div class="input-container">
                         <label for="pwd_confirm">Confirm password</label>
-                        <input id="pwd_confirm"
+                        <input
+                        id="pwd_confirm"
                         name="pwd_confirm"
                         type="password"
+                        placeholder="Make it safe!²"
                         pattern="^(?=.*\W).{8,24}$"
                         title="The password must be between 8 and 24 characters long and contain a special character.">
                     </div>
                 </form>
             </div>
             <div class="register-container">
-                <button type="submit" class="register-button" form="register-form">
+                <button type="button" class="register-button" form="register-form">
                     Create Account
                 </button>
                 <p class="login-paragraph">Already have an account?
-                    <a href="" class="login-link">
+                    <a class="login-link">
                     Log in</a>
                 </p>
             </div>
