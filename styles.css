@@ -84,7 +84,7 @@ body {
     background-color: var(--register-section-color);
     background-image: url(./img/background.jpg);
 
-    width: 810px;
+    width: 42%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 25% 50%;
