@@ -36,7 +36,7 @@ em {
     --card-text-shadow: var(--black-shadow);
     --artist-link-text-shadow: var(--black-shadow);
 
-    --main-container-padding: 64px;
+    --main-container-padding: 52px;
     --medium-font-size: 2.4rem;
 
     --input-valid-color: dodgerblue;
@@ -274,7 +274,7 @@ body {
     box-shadow: 1px 1px 4px var(--box-shadow-color);
     background-color: var(--register-section-color);
 
-    margin: 32px 0;
+    margin: 36px 0;
     padding: 14px 52px;
     border-radius: 6px;
     font-weight: bold;
