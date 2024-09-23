@@ -184,6 +184,7 @@ body {
 
 .form-container {
     position: relative;
+    z-index: 2;
     background-color: var(--white);
     box-shadow: 3px 3px 4px var(--box-shadow-color);
 
@@ -266,6 +267,8 @@ body {
 /* Register section */
 
 .register-container {
+    position: relative;
+
     background-color: var(--light-gray);
     flex: 8;
 }
@@ -273,7 +276,8 @@ body {
 .register-button {
     position: absolute;
     top: 355px;
-    
+    z-index: 1;
+
     box-shadow: 1px 1px 4px var(--box-shadow-color);
     background-color: var(--register-section-color);
 
@@ -299,7 +303,7 @@ body {
     margin-top: 116px;
     font-weight: bold;
 }
-
+ 
 .login-link {
     color: var(--register-section-color);
     text-decoration: none;
@@ -314,4 +318,12 @@ body {
 .login-link:active {
     color: var(--register-section-color-active);
     transition: none;
+}
+
+.kyubey {
+    z-index: 2;
+    position: absolute;
+    height: 60px;
+    top: 6px;
+    left: 43px;
 }
