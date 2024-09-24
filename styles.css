@@ -280,9 +280,13 @@ body {
     flex: 8;
 }
 
+.register-button-container {
+    position: relative;
+}
+
 .register-button {
     position: absolute;
-    top: 355px;
+    top: 68px;
 
     box-shadow: 1px 1px 4px var(--box-shadow-color);
     background-color: var(--register-section-color);
@@ -305,6 +309,15 @@ body {
     transition: none;
 }
 
+.kyubey {
+    z-index: 1;
+    position: absolute;
+    top: 38px;
+    left: -9px;
+    height: 60px;
+    pointer-events: none;
+}
+
 .login-paragraph {
     margin-top: 116px;
     font-weight: bold;
@@ -324,13 +337,4 @@ body {
 .login-link:active {
     color: var(--register-section-color-active);
     transition: none;
-}
-
-.kyubey {
-    z-index: 1;
-    position: absolute;
-    height: 60px;
-    top: 6px;
-    left: 43px;
-    pointer-events: none;
 }
